@@ -1,0 +1,13 @@
+@mixin purple-button {
+    width: 218px;
+    background: linear-gradient($secondary-color,$primary-color);
+    border-radius: 25px;
+    border: none;
+    height: 50px;
+    font-weight: 500px;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family: $texte-font;
+    text-align: center;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}

@@ -1,2 +1,98 @@
 /*Variables couleurs*/
-/*Variables font*//*# sourceMappingURL=main.css.map */
+/*Variables font*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.homepage-header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.Logo {
+  height: 36px;
+  margin: 14px;
+}
+
+.search-bar {
+  width: 100%;
+  background-color: #EAEAEA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), inset 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+#localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16px;
+  width: 18px;
+  color: rgb(0, 0, 0);
+  margin-right: 17px;
+}
+
+input {
+  border: none;
+  background-color: #EAEAEA;
+  color: black;
+  outline: none;
+  width: 110px;
+}
+
+input::-moz-placeholder {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 500;
+  width: 110px;
+}
+
+input::placeholder {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 500;
+  width: 110px;
+}
+
+.title-and-intro {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  background-color: #F6F6F6;
+  padding-bottom: 30px;
+}
+.title-and-intro h1 {
+  font-family: "Roboto";
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  width: 275px;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+.title-and-intro p {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+}
+.title-and-intro button {
+  width: 218px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 25px;
+  border: none;
+  height: 50px;
+  font-weight: 500px;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: "Roboto";
+  text-align: center;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}/*# sourceMappingURL=main.css.map */
