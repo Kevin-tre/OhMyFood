@@ -5,9 +5,10 @@
         {
             "format": "expanded",
             "extensionName": ".css",
-            "savePath": "./assets/css",
+            "savePath": "/assets/css",
             "savePathReplacementPairs": null
         }
     ],
-    "liveSassCompile.settings.generateMap": true
+    "liveSassCompile.settings.generateMap": true,
+    "prettier.useEditorConfig": false
 }

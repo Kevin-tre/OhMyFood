@@ -1,8 +1,14 @@
 /*Variables couleurs*/
 /*Variables font*/
 body {
-  margin: 0;
+  max-width: 425px;
+  margin: 0 auto;
   padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .homepage-header {
@@ -95,4 +101,135 @@ input::placeholder {
   font-family: "Roboto";
   text-align: center;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.operation {
+  width: 100%;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+}
+.operation-list {
+  display: flex;
+  flex-direction: column;
+}
+.operation h2 {
+  padding-left: 15px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+}
+.operation ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  padding-bottom: 30px;
+}
+.operation li {
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 72px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.num-icons {
+  color: gray;
+  position: absolute;
+  left: 46px;
+  top: 27px;
+}
+
+.fa-store {
+  color: #9356DC;
+  position: absolute;
+  left: 46px;
+  top: 27px;
+}
+
+.operation-list li {
+  position: relative;
+}
+
+.num {
+  height: 30px;
+  width: 30px;
+  background-color: #9356DC;
+  border-radius: 20px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -15px;
+  color: white;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 11px;
+  height: 60px;
+}
+
+.restaurants-cards img {
+  width: 100%;
+  height: 175px;
+  border-radius: 20px 20px 0 0;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Roboto";
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+
+.card-subtitle {
+  font-weight: 300;
+  font-size: 17px;
+  font-family: "Roboto";
+  margin-top: 0;
+}
+
+.card-heart {
+  align-self: flex-end;
+  position: relative;
+  top: -59px;
+  right: 22px;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  list-style: none;
 }/*# sourceMappingURL=main.css.map */
