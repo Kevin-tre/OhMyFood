@@ -1,3 +1,10 @@
+@mixin home-title {
+    padding-left: 15px;
+    font-family: $texte-font;
+    font-weight: 700;
+    font-size: 24px;
+}
+
 @mixin purple-button {
     width: 218px;
     background: linear-gradient($secondary-color,$primary-color);

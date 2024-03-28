@@ -44,10 +44,7 @@
     }
 
     & h2 {
-        padding-left: 15px;
-        font-family: $texte-font;
-        font-weight: 700;
-        font-size: 24px;
+        @include home-title
     }
 
     & ul {
@@ -112,6 +109,10 @@
     display: flex;
     flex-direction: column;
     background-color: $background-color-section;
+
+    & h2 {
+        @include home-title
+    }
 }
 
 
@@ -119,7 +120,7 @@
     background-color: white;
     border-radius: 20px;
     box-shadow:(0px 3px 15px rgba(0, 0, 0, 0.1));
-    width: 80%;
+    width: 90%;
     margin: auto;
     margin-bottom: 20px;
 }
@@ -135,7 +136,7 @@
 
 .restaurants-cards img {
     width: 100%;
-    height: 175px;
+    height: 200px;
     border-radius: 20px 20px 0 0;
 }
 
@@ -161,11 +162,3 @@
     right: 22px;
 }
 
-footer ul {
-    padding: 0;
-    margin: 0;
-}
-
-footer li {
-    list-style: none;
-}

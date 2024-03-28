@@ -1,0 +1,40 @@
+footer {
+    background-color: #353535;
+    padding-left: 27px;
+
+    & h3 {
+        color:#FFFFFF ;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: $title-font;
+        padding-top: 15px;
+        margin-top: 0;
+    }
+
+    & a {
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: $texte-font;
+        gap: 5px;
+    }
+
+    & i {
+        padding-right: 7px;
+        width: 11px;
+        height: 13px;
+        font-size: 14px;
+        
+    }
+
+}
+
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
