@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Variables couleurs*/
 /*Variables font*/
 body {
@@ -135,6 +136,11 @@ input::placeholder {
   font-family: "Roboto";
   text-align: center;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  transition: all 400ms ease;
+}
+.title-and-intro button:hover {
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
+  filter: brightness(110%); /* Ajuste la luminosité */
 }
 
 .operation {
