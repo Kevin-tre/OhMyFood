@@ -18,3 +18,9 @@
     text-align: center;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
+
+@mixin heart-icon {
+    color: #101010;
+    font-size: 25px;
+    cursor: pointer;
+}
