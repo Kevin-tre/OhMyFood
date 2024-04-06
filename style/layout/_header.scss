@@ -1,3 +1,5 @@
+//Header Home Page //
+
 .homepage-header{
     display: flex;
     justify-content: center;
@@ -47,4 +49,19 @@ input::placeholder{
     width: 110px;
 }
 
+// HEADER MENU //
 
+.menu-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    & i {
+        font-size: 30px;
+        height: 16px;
+        align-content: center;
+        position: absolute;
+        right: 54px;
+    }
+}
