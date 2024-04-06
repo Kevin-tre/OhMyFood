@@ -315,8 +315,7 @@ input::placeholder {
 
 .positon {
   position: relative;
-  padding-top: 100px; /* Ajustez cette valeur en fonction de la hauteur de votre en-tête */
-  padding-bottom: 100px; /* Ajustez cette valeur en fonction de la hauteur de votre footer */
+  padding-bottom: 264px; /* Ajustez cette valeur en fonction de la hauteur de votre footer */
   min-height: calc(100vh - 150px); /* 100px pour l'en-tête et 50px pour le footer */
 }
 
@@ -393,4 +392,27 @@ input::placeholder {
   right: 20px;
   font-weight: 700;
   font-size: 15px;
+}
+
+.button-order {
+  display: flex;
+  justify-content: center;
+}
+.button-order button {
+  width: 218px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 25px;
+  border: none;
+  height: 50px;
+  font-weight: 500px;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: "Roboto";
+  text-align: center;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  transition: all 400ms ease;
+}
+.button-order button:hover {
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
+  filter: brightness(110%); /* Ajuste la luminosité */
 }/*# sourceMappingURL=main.css.map */
