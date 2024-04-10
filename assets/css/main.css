@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*Variables couleurs*/
 /*Variables font*/
+/*Variable breakpoint Desktop*/
 body {
-  max-width: 425px;
   margin: 0 auto;
   padding: 0;
 }
@@ -13,8 +13,17 @@ a {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   background-color: #353535;
   padding-left: 27px;
+}
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row-reverse;
+    gap: 70px;
+    padding: 30px 25px 30px 25px;
+  }
 }
 footer h3 {
   color: #FFFFFF;
@@ -29,7 +38,7 @@ footer a {
   align-items: center;
   color: #FFFFFF;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   font-family: "Roboto";
   gap: 5px;
 }
@@ -39,11 +48,20 @@ footer i {
   height: 13px;
   font-size: 14px;
 }
+footer .bold-text {
+  font-weight: 500;
+}
 
 .footer-container {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+@media (min-width: 1024px) {
+  .footer-container {
+    flex-direction: row;
+    gap: 15px;
+  }
 }
 
 .homepage-header {
@@ -163,15 +181,21 @@ input::placeholder {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 1024px) {
+  .operation {
+    height: 228px;
+  }
+}
 .operation-list {
   display: flex;
   flex-direction: column;
 }
 .operation h2 {
-  padding-left: 15px;
+  padding-left: 30px;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 24px;
+  padding-top: 30px;
 }
 .operation ul {
   padding: 0;
@@ -181,6 +205,14 @@ input::placeholder {
   align-items: center;
   height: 300px;
   padding-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .operation ul {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 25px;
+    width: 90%;
+  }
 }
 .operation li {
   position: relative;
@@ -230,10 +262,30 @@ input::placeholder {
   padding-bottom: 20px;
 }
 .restaurants h2 {
-  padding-left: 15px;
+  padding-left: 30px;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 24px;
+  padding-top: 30px;
+}
+.restaurants-cards {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .restaurants-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.restaurants a {
+  width: 90%;
+  margin: auto;
+}
+@media (min-width: 1024px) {
+  .restaurants a {
+    width: 45%;
+  }
 }
 
 .card {
@@ -241,8 +293,6 @@ input::placeholder {
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  margin: auto;
   margin-bottom: 20px;
 }
 .card-new {

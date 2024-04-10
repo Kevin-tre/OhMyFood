@@ -1,6 +1,14 @@
 footer {
+    display: flex;
+    flex-direction: column;
     background-color: #353535;
     padding-left: 27px;
+
+    @media (min-width: $breakpoint-desktop) {
+        flex-direction: row-reverse;
+        gap: 70px;
+        padding: 30px 25px 30px 25px;
+}
 
     & h3 {
         color:#FFFFFF ;
@@ -16,7 +24,7 @@ footer {
         align-items: center;
         color: #FFFFFF;
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 400;
         font-family: $texte-font;
         gap: 5px;
     }
@@ -29,12 +37,19 @@ footer {
         
     }
 
-}
+    & .bold-text {
+        font-weight: 500;
+    }
 
+}
 
 .footer-container {
     display: flex;
     flex-direction: column;
     gap: 5px;
-}
 
+    @media (min-width: $breakpoint-desktop) {
+        flex-direction: row;
+        gap: 15px;
+}
+}
