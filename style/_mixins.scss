@@ -1,8 +1,9 @@
 @mixin home-title {
-    padding-left: 15px;
+    padding-left: 30px;
     font-family: $texte-font;
     font-weight: 700;
     font-size: 24px;
+    padding-top: 30px;
 }
 
 @mixin purple-button {

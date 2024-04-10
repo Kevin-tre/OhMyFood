@@ -85,6 +85,11 @@ footer .bold-text {
   height: 50px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), inset 0 3px 4px 0 rgba(0, 0, 0, 0.25);
 }
+@media (min-width: 1024px) {
+  .search-bar {
+    box-shadow: none;
+  }
+}
 
 #localisation {
   display: flex;
@@ -150,6 +155,12 @@ input::placeholder {
   margin-bottom: 0;
   margin-top: 30px;
 }
+@media (min-width: 1024px) {
+  .title-and-intro h1 {
+    width: 100%;
+    font-size: 40px;
+  }
+}
 .title-and-intro p {
   font-family: "Roboto";
   font-weight: 300;
@@ -184,11 +195,17 @@ input::placeholder {
 @media (min-width: 1024px) {
   .operation {
     height: 228px;
+    padding-left: 170px;
   }
 }
 .operation-list {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .operation-list {
+    width: 80%;
+  }
 }
 .operation h2 {
   padding-left: 30px;
@@ -204,7 +221,6 @@ input::placeholder {
   justify-content: space-between;
   align-items: center;
   height: 300px;
-  padding-bottom: 30px;
 }
 @media (min-width: 1024px) {
   .operation ul {
@@ -212,6 +228,7 @@ input::placeholder {
     align-items: flex-start;
     gap: 25px;
     width: 90%;
+    padding-left: 40px;
   }
 }
 .operation li {
