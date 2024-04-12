@@ -237,7 +237,7 @@ input::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 80%;
   height: 72px;
   border-radius: 20px;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -245,17 +245,20 @@ input::placeholder {
   font-weight: 500;
   font-size: 16px;
 }
+@media (min-width: 768px) {
+  .operation li {
+    width: 100%;
+  }
+}
 
-.fonctionnement-title {
+.operation-title {
   width: 100%;
   text-align: center;
 }
 
 .fa-store {
   color: #9356DC;
-  position: absolute;
-  left: 46px;
-  top: 27px;
+  margin-right: 10px;
 }
 
 .num {
@@ -365,9 +368,16 @@ input::placeholder {
   position: absolute;
   right: 22px;
   bottom: 22px;
+  position: relative;
   color: #101010;
   font-size: 25px;
   cursor: pointer;
+}
+.card-heart:hover .empty-heart {
+  opacity: 0;
+}
+.card-heart:hover .full-heart {
+  opacity: 1;
 }
 
 .menu-nav a {
@@ -517,19 +527,16 @@ input::placeholder {
 
 .heart-container {
   position: relative;
-  border: 1px solid red;
+  position: relative;
 }
-
 .heart-container:hover .empty-heart {
   opacity: 0;
 }
-
 .heart-container:hover .full-heart {
   opacity: 1;
 }
 
 .empty-heart {
-  border: 1px solid green;
   opacity: 1;
   position: absolute;
   top: 0;
@@ -538,7 +545,6 @@ input::placeholder {
 }
 
 .full-heart {
-  border: 1px solid blue;
   opacity: 0;
   position: absolute;
   top: 0;
