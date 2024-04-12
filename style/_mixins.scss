@@ -12,7 +12,7 @@
     border-radius: 25px;
     border: none;
     height: 50px;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 16px;
     color: #FFFFFF;
     font-family: $texte-font;
@@ -33,7 +33,7 @@
 }
 
 @mixin border-menu-subtitle {
-    content: ""; /* Ajout d'un pseudo-élément */
+    content: ""; 
     position: absolute; 
     top: 25px;
     left: 40px; 
