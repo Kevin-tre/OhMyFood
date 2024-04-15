@@ -32,6 +32,22 @@
     cursor: pointer;
 }
 
+@mixin heart-container {
+    position: relative;
+
+    &:hover {
+        .empty-heart {
+            opacity: 0;
+            transition: 2s;
+        }
+
+        .full-heart {
+            opacity: 1;
+            transition: 2s;
+        }
+    }
+}
+
 @mixin border-menu-subtitle {
     content: ""; 
     position: absolute; 

@@ -222,11 +222,10 @@
     &-heart {
     align-self: flex-end;
     position: absolute;
-    right: 22px;
-    bottom: 22px;
+    right: 31px;
+    bottom: 58px;
     @include heart-container;
     @include heart-icon;
-    
 }
 }
 
