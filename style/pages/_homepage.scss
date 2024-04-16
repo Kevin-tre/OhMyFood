@@ -163,6 +163,7 @@
 .restaurants-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
 
     @media (min-width: $breakpoint-desktop) {
         width:80%;

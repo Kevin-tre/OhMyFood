@@ -123,6 +123,10 @@
         margin: 0 ;
         padding-top: 8px;
         padding-bottom: 8px;
+        max-width: 311px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     & p {
@@ -132,6 +136,10 @@
         font-family: $texte-font;
         font-size: 15px;
         font-weight: 300;
+        max-width: 300px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 }
 
