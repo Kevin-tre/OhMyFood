@@ -160,7 +160,15 @@
     }
 }
 
+.restaurants-container {
+    display: flex;
+    flex-direction: column;
 
+    @media (min-width: $breakpoint-desktop) {
+        width:80%;
+        margin: 0 auto;
+}
+}
 .card{
     position: relative;
     background-color: white;

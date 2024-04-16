@@ -20,6 +20,17 @@
     <title>OhMyFood</title>
   </head>
   <body>
+    <div class="loader-container">
+      <div class="container">
+        <div class="loader"></div>
+        <div class="dots">
+          <div>.</div>
+          <div>.</div>
+          <div>.</div>
+          <div>.</div>
+        </div>
+      </div>
+    </div>
     <div class="main-container">
       <header class="homepage-header">
         <img
@@ -73,82 +84,84 @@
           </div>
         </section>
         <section class="restaurants">
-          <h2>Restaurants</h2>
-          <div class="restaurants-cards">
-            <a href="/OhMyFood/restaurants/menu-palette-du-gout.html">
-              <article class="card">
-                <div class="card-new">Nouveau</div>
-                <img
-                  src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                  alt="Image du restaurant avec un plat"
-                />
-                <div class="card-content">
-                  <div class="card-txt">
-                    <h3 class="card-title">La palette du goût</h3>
-                    <p class="card-subtitle">Ménilmontant</p>
+          <div class="restaurants-container">
+            <h2>Restaurants</h2>
+            <div class="restaurants-cards">
+              <a href="/OhMyFood/restaurants/menu-palette-du-gout.html">
+                <article class="card">
+                  <div class="card-new">Nouveau</div>
+                  <img
+                    src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                    alt="Image du restaurant avec un plat"
+                  />
+                  <div class="card-content">
+                    <div class="card-txt">
+                      <h3 class="card-title">La palette du goût</h3>
+                      <p class="card-subtitle">Ménilmontant</p>
+                    </div>
+                    <div class="card-heart">
+                      <i class="fa-regular fa-heart empty-heart"></i>
+                      <i class="fa-solid fa-heart full-heart"></i>
+                    </div>
                   </div>
-                  <div class="card-heart">
-                    <i class="fa-regular fa-heart empty-heart"></i>
-                    <i class="fa-solid fa-heart full-heart"></i>
+                </article>
+              </a>
+              <a href="/OhMyFood/restaurants/menu-note-enchantée.html">
+                <article class="card">
+                  <div class="card-new">Nouveau</div>
+                  <img
+                    src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                    alt="Image du restaurant avec un plat"
+                  />
+                  <div class="card-content">
+                    <div class="card-txt">
+                      <h3 class="card-title">La note enchantée</h3>
+                      <p class="card-subtitle">Charonne</p>
+                    </div>
+                    <div class="card-heart">
+                      <i class="fa-regular fa-heart empty-heart"></i>
+                      <i class="fa-solid fa-heart full-heart"></i>
+                    </div>
                   </div>
-                </div>
-              </article>
-            </a>
-            <a href="/OhMyFood/restaurants/menu-note-enchantée.html">
-              <article class="card">
-                <div class="card-new">Nouveau</div>
-                <img
-                  src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                  alt="Image du restaurant avec un plat"
-                />
-                <div class="card-content">
-                  <div class="card-txt">
-                    <h3 class="card-title">La note enchantée</h3>
-                    <p class="card-subtitle">Charonne</p>
+                </article>
+              </a>
+              <a href="/OhMyFood/restaurants/menu-a-la-française.html">
+                <article class="card">
+                  <img
+                    src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                    alt="Image du restaurant avec un plat"
+                  />
+                  <div class="card-content">
+                    <div class="card-txt">
+                      <h3 class="card-title">À la française</h3>
+                      <p class="card-subtitle">Cité rouge</p>
+                    </div>
+                    <div class="card-heart">
+                      <i class="fa-regular fa-heart empty-heart"></i>
+                      <i class="fa-solid fa-heart full-heart"></i>
+                    </div>
                   </div>
-                  <div class="card-heart">
-                    <i class="fa-regular fa-heart empty-heart"></i>
-                    <i class="fa-solid fa-heart full-heart"></i>
+                </article>
+              </a>
+              <a href="/OhMyFood/restaurants/menu-délice-des-sens.html">
+                <article class="card">
+                  <img
+                    src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                    alt="Image du restaurant avec un plat"
+                  />
+                  <div class="card-content">
+                    <div class="card-txt">
+                      <h3 class="card-title">Le délice des sens</h3>
+                      <p class="card-subtitle">Folie-Méricourt</p>
+                    </div>
+                    <div class="card-heart">
+                      <i class="fa-regular fa-heart empty-heart"></i>
+                      <i class="fa-solid fa-heart full-heart"></i>
+                    </div>
                   </div>
-                </div>
-              </article>
-            </a>
-            <a href="/OhMyFood/restaurants/menu-a-la-française.html">
-              <article class="card">
-                <img
-                  src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                  alt="Image du restaurant avec un plat"
-                />
-                <div class="card-content">
-                  <div class="card-txt">
-                    <h3 class="card-title">À la française</h3>
-                    <p class="card-subtitle">Cité rouge</p>
-                  </div>
-                  <div class="card-heart">
-                    <i class="fa-regular fa-heart empty-heart"></i>
-                    <i class="fa-solid fa-heart full-heart"></i>
-                  </div>
-                </div>
-              </article>
-            </a>
-            <a href="/OhMyFood/restaurants/menu-délice-des-sens.html">
-              <article class="card">
-                <img
-                  src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                  alt="Image du restaurant avec un plat"
-                />
-                <div class="card-content">
-                  <div class="card-txt">
-                    <h3 class="card-title">Le délice des sens</h3>
-                    <p class="card-subtitle">Folie-Méricourt</p>
-                  </div>
-                  <div class="card-heart">
-                    <i class="fa-regular fa-heart empty-heart"></i>
-                    <i class="fa-solid fa-heart full-heart"></i>
-                  </div>
-                </div>
-              </article>
-            </a>
+                </article>
+              </a>
+            </div>
           </div>
         </section>
       </main>
