@@ -548,7 +548,8 @@ input::placeholder {
 .empty-heart {
   opacity: 1;
   position: absolute;
-  top: 0;
+  top: -15px;
+  right: -55px;
   transition: 0s;
   color: rgb(0, 0, 0);
 }
@@ -556,9 +557,39 @@ input::placeholder {
 .full-heart {
   opacity: 0;
   position: absolute;
-  top: 0;
+  top: -15px;
+  right: -55px;
   transition: 0s;
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.animationEntrees {
+  opacity: 0;
+  animation: menuAnimation 3s ease forwards;
+  animation-delay: 0.2s; /* Délai pour le groupe d'entrées */
+}
+
+.animationPlats {
+  opacity: 0;
+  animation: menuAnimation 3s ease forwards;
+  animation-delay: 0.6s; /* Délai pour le groupe de plats */
+}
+
+.animationDesserts {
+  opacity: 0;
+  animation: menuAnimation 3s ease forwards;
+  animation-delay: 1s; /* Délai pour le groupe de desserts */
+}
+
+@keyframes menuAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }/*# sourceMappingURL=main.css.map */
