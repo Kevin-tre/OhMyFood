@@ -366,8 +366,8 @@ input::placeholder {
 .card-heart {
   align-self: flex-end;
   position: absolute;
-  right: 31px;
-  bottom: 58px;
+  right: 57px;
+  bottom: 48px;
   position: relative;
   color: #101010;
   font-size: 25px;
@@ -534,7 +534,6 @@ input::placeholder {
 
 .heart-container {
   position: relative;
-  position: relative;
 }
 .heart-container:hover .empty-heart {
   opacity: 0;
@@ -548,8 +547,8 @@ input::placeholder {
 .empty-heart {
   opacity: 1;
   position: absolute;
-  top: -15px;
-  right: -55px;
+  top: -13px;
+  right: -40px;
   transition: 0s;
   color: rgb(0, 0, 0);
 }
@@ -557,8 +556,8 @@ input::placeholder {
 .full-heart {
   opacity: 0;
   position: absolute;
-  top: -15px;
-  right: -55px;
+  top: -13px;
+  right: -40px;
   transition: 0s;
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;

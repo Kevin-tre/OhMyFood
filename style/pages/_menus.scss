@@ -133,15 +133,15 @@
 }
 
 .heart-container {
-    position: relative;
     @include heart-container;
+
 }
 
 .empty-heart {
     opacity: 1;
     position: absolute;
-    top: -15px;
-    right: -55px;
+    top: -13px;
+    right: -40px;
     transition: 0s;
     color: rgb(0, 0, 0);
 }
@@ -150,8 +150,8 @@
 .full-heart {
     opacity: 0;
     position: absolute;
-    top: -15px;
-    right: -55px;
+    top: -13px;
+    right: -40px;
     transition: 0s;
     background: linear-gradient($secondary-color,$primary-color);
     -webkit-background-clip: text;
