@@ -68,4 +68,9 @@ input::placeholder{
         position: absolute;
         right: 54px;
     }
+
+    & a {
+        display: flex;
+        align-items: center;
+    }
 }

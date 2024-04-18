@@ -136,6 +136,10 @@ input::placeholder {
   position: absolute;
   right: 54px;
 }
+.menu-nav a {
+  display: flex;
+  align-items: center;
+}
 
 .title-and-intro {
   display: flex;
@@ -394,17 +398,17 @@ input::placeholder {
   transition: 2s;
 }
 
-.menu-nav a {
-  display: flex;
-  align-items: center;
-}
-
 .img-container img {
   width: 100%;
   height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
   background-position: center;
+}
+@media (min-width: 1024px) {
+  .img-container img {
+    height: 361px;
+  }
 }
 
 .container-menu {
@@ -420,6 +424,8 @@ input::placeholder {
 @media (min-width: 1024px) {
   .container-menu {
     padding: 0 100px;
+    width: 70%;
+    margin: -40px auto 0;
   }
 }
 
@@ -437,131 +443,12 @@ input::placeholder {
   font-weight: 400;
   font-family: "Shrikhand";
   color: #101010;
-  padding-left: 15px;
 }
 .title-heart i {
   color: #101010;
   font-size: 25px;
   cursor: pointer;
   padding-left: 70px;
-}
-
-.menu-subtitle h2 {
-  font-family: "Roboto";
-  font-size: 21px;
-  font-weight: 300;
-  padding-left: 15px;
-  position: relative;
-}
-
-.menu-subtitle h2::after {
-  content: "";
-  position: absolute;
-  top: 25px;
-  left: 40px;
-  width: 48px;
-  height: 3px;
-  background-color: #99E2D0;
-  transform: translateX(-50%); /* Centre horizontalement */
-}
-
-.button-order {
-  display: flex;
-  justify-content: center;
-  padding: 30px 0;
-}
-.button-order button {
-  width: 218px;
-  background: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 25px;
-  border: none;
-  height: 50px;
-  font-weight: 500;
-  font-size: 16px;
-  color: #FFFFFF;
-  font-family: "Roboto";
-  text-align: center;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
-  transition: all 400ms ease;
-}
-.button-order button:hover {
-  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
-  filter: brightness(110%); /* Ajuste la luminosité */
-}
-
-.menu-container {
-  display: flex;
-  overflow: hidden;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.menu-txt-container {
-  display: flex;
-  flex: 1;
-  transition: 2s;
-  align-items: flex-end;
-}
-
-.menu-price-container {
-  padding-bottom: 8px;
-  padding-right: 30px;
-  margin: 0;
-  font-family: "Roboto";
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
-  color: white;
-  width: 70px;
-  margin-right: -80px;
-  transition: 2s;
-}
-
-.menu-title-container {
-  flex: 1;
-  padding-left: 15px;
-  font-family: "Roboto";
-  font-size: 18px;
-  font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.menu-title-container h3 {
-  margin: 0;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  max-width: 311px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.menu-title-container p {
-  padding-bottom: 8px;
-  margin: 0;
-  position: relative;
-  font-family: "Roboto";
-  font-size: 15px;
-  font-weight: 300;
-  max-width: 300px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.menu-container:hover .check {
-  margin-right: 0;
-}
-
-.menu-container:hover .menu-txt-container {
-  width: calc(100% - 70px);
 }
 
 .heart-container {
@@ -596,22 +483,153 @@ input::placeholder {
   -webkit-text-fill-color: transparent;
 }
 
+.menu-subtitle h2 {
+  font-family: "Roboto";
+  font-size: 21px;
+  font-weight: 300;
+  padding-left: 0;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .menu-subtitle h2 {
+    padding-left: 5px;
+  }
+}
+.menu-subtitle h2::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 26px;
+  width: 48px;
+  height: 3px;
+  background-color: #99E2D0;
+  margin-top: 4px;
+  transform: translateX(-50%); /* Centre horizontalement */
+}
+@media (min-width: 1024px) {
+  .menu-subtitle h2::after {
+    left: 30px;
+  }
+}
+
+.menu-container {
+  display: flex;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.menu-txt-container {
+  display: flex;
+  flex: 1;
+  transition: 2s;
+  align-items: flex-end;
+}
+
+.menu-title-container {
+  flex: 1;
+  padding-left: 15px;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu-title-container h3 {
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  max-width: 311px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu-title-container p {
+  padding-bottom: 8px;
+  margin: 0;
+  position: relative;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 300;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu-price-container {
+  padding-bottom: 8px;
+  padding-right: 45px;
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  color: white;
+  width: 50px;
+  margin-right: -80px;
+  transition: 2s;
+}
+
+.menu-container:hover .check {
+  margin-right: 0;
+}
+
+.menu-container:hover .menu-txt-container {
+  width: calc(100% - 70px);
+}
+
+.button-order {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+.button-order button {
+  width: 218px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 25px;
+  border: none;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: "Roboto";
+  text-align: center;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  transition: all 400ms ease;
+}
+.button-order button:hover {
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5);
+  filter: brightness(110%); /* Ajuste la luminosité */
+}
+
 .animationEntrees {
   opacity: 0;
   animation: menuAnimation 3s ease forwards;
   animation-delay: 0.2s; /* Délai pour le groupe d'entrées */
+  padding-bottom: 5px;
 }
 
 .animationPlats {
   opacity: 0;
   animation: menuAnimation 3s ease forwards;
   animation-delay: 0.6s; /* Délai pour le groupe de plats */
+  padding-bottom: 5px;
 }
 
 .animationDesserts {
   opacity: 0;
   animation: menuAnimation 3s ease forwards;
   animation-delay: 1s; /* Délai pour le groupe de desserts */
+  padding-bottom: 5px;
 }
 
 @keyframes menuAnimation {
@@ -636,7 +654,7 @@ input::placeholder {
   /* Firefox */
   /* Safari and Chrome */
   /* Opera */
-  animation: cssAnimation 0s ease-in 5s forwards;
+  animation: cssAnimation 0s ease-in 3s forwards;
   animation-fill-mode: forwards;
 }
 
@@ -657,9 +675,27 @@ input::placeholder {
   height: 200px;
   border-radius: 50%;
   box-shadow: 0 0 5px blueviolet;
-  animation: ring 5s linear infinite;
+  animation: ring 3s linear infinite;
 }
 
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #99e2d0;
+  }
+  25% {
+    transform: rotate(120deg);
+    box-shadow: 1px 5px 2px #008766;
+  }
+  50% {
+    transform: rotate(240deg);
+    box-shadow: 1px 5px 2px #003a68;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #9356dc;
+  }
+}
 .dots {
   display: flex;
   position: absolute;
@@ -699,23 +735,4 @@ input::placeholder {
 .dots div:nth-child(4) {
   animation-delay: 1.1s;
   color: #003a68;
-}
-
-@keyframes ring {
-  0% {
-    transform: rotate(0deg);
-    box-shadow: 1px 5px 2px #99e2d0;
-  }
-  25% {
-    transform: rotate(120deg);
-    box-shadow: 1px 5px 2px #008766;
-  }
-  50% {
-    transform: rotate(240deg);
-    box-shadow: 1px 5px 2px #003a68;
-  }
-  100% {
-    transform: rotate(360deg);
-    box-shadow: 1px 5px 2px #9356dc;
-  }
 }/*# sourceMappingURL=main.css.map */

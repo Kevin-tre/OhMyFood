@@ -8,13 +8,13 @@
     align-items: center;
     min-height: 100vh;
     background:rgba(5, 39, 39,0.9);
-    -moz-animation: cssAnimation 0s ease-in 5s forwards;
+    -moz-animation: cssAnimation 0s ease-in 3s forwards;
     /* Firefox */
-    -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation: cssAnimation 0s ease-in 3s forwards;
     /* Safari and Chrome */
-    -o-animation: cssAnimation 0s ease-in 5s forwards;
+    -o-animation: cssAnimation 0s ease-in 3s forwards;
     /* Opera */
-    animation: cssAnimation 0s ease-in 5s forwards;
+    animation: cssAnimation 0s ease-in 3s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
@@ -43,8 +43,28 @@
     height: 200px;
     border-radius: 50%;
     box-shadow: 0 0 5px blueviolet;
-    animation: ring 5s linear infinite;
+    animation: ring 3s linear infinite;
 }
+
+@keyframes ring {
+    0% {
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #99e2d0;
+    }
+    25% {
+        transform: rotate(120deg);
+        box-shadow: 1px 5px 2px #008766;
+    }
+    50% {
+        transform: rotate(240deg);
+        box-shadow: 1px 5px 2px #003a68;
+    }
+    100% {
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #9356dc;
+    }
+}
+
 
 .dots {
     display: flex;
@@ -87,29 +107,6 @@
 .dots div:nth-child(4) {
     animation-delay: 1.1s;
     color:#003a68 ;
-}
-
-
-
-
-
-@keyframes ring {
-    0% {
-        transform: rotate(0deg);
-        box-shadow: 1px 5px 2px #99e2d0;
-    }
-    25% {
-        transform: rotate(120deg);
-        box-shadow: 1px 5px 2px #008766;
-    }
-    50% {
-        transform: rotate(240deg);
-        box-shadow: 1px 5px 2px #003a68;
-    }
-    100% {
-        transform: rotate(360deg);
-        box-shadow: 1px 5px 2px #9356dc;
-    }
 }
 
 

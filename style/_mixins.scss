@@ -52,9 +52,14 @@
     content: ""; 
     position: absolute; 
     top: 25px;
-    left: 40px; 
+    left: 26px; 
     width: 48px; 
     height: 3px; 
     background-color: #99E2D0; 
+    margin-top: 4px;
     transform: translateX(-50%); /* Centre horizontalement */
+
+    @media (min-width: $breakpoint-desktop) {
+        left: 30px;
+}
 }

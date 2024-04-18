@@ -1,14 +1,12 @@
-.menu-nav a {
-    display: flex;
-    align-items: center;
-}
-
 .img-container img {
     width: 100%;
     height: 275px;
     object-fit: cover;
     background-position: center;
 
+    @media (min-width: $breakpoint-desktop) {
+        height: 361px;
+}
 }
 
 .container-menu {
@@ -23,6 +21,8 @@
 
     @media (min-width: $breakpoint-desktop) {
         padding: 0 100px;
+        width: 70%;
+        margin: -40px auto 0;
 }
 }
     
@@ -39,7 +39,6 @@
         font-weight: 400;
         font-family: $title-font;
         color:#101010 ;
-        padding-left: 15px;
         }
 
         & i {
@@ -48,30 +47,48 @@
         }
 }
 
+.heart-container {
+    @include heart-container;
+
+}
+
+.empty-heart {
+    opacity: 1;
+    position: absolute;
+    top: -13px;
+    right: -40px;
+    transition: 0s;
+    color: rgb(0, 0, 0);
+}
+
+
+.full-heart {
+    opacity: 0;
+    position: absolute;
+    top: -13px;
+    right: -40px;
+    transition: 2s;
+    background: linear-gradient($secondary-color,$primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .menu-subtitle h2{
     font-family: $texte-font;
     font-size: 21px;
     font-weight: 300;
-    padding-left: 15px;
+    padding-left: 0;
     position: relative;
+
+    @media (min-width: $breakpoint-desktop) {
+        padding-left: 5px;
+}
+
+    &::after {
+        @include border-menu-subtitle;
+    }
     
 }
-
-.menu-subtitle h2::after {
-   @include border-menu-subtitle;
-}
-
-
-.button-order {
-    display: flex;
-    justify-content: center;
-    padding: 30px 0;
-
-    & button {
-        @include purple-button
-    }
-}
-
 
 .menu-container {
     display: flex;
@@ -80,6 +97,7 @@
     border-radius: 20px;
     box-shadow:(0px 3px 15px rgba(0, 0, 0, 0.1));
     margin-bottom: 20px;
+    
 }
 
 .menu-txt-container {
@@ -88,26 +106,6 @@
     flex: 1;
     transition: 2s;
     align-items: flex-end;
-}
-
-.menu-price-container {
-    padding-bottom: 8px;
-    padding-right: 30px;
-    margin: 0;
-    font-family: $texte-font;
-    font-size: 15px;
-    font-weight: 700;
-}
-
-.check {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #99E2D0;
-    color: white;
-    width: 70px;
-    margin-right: -80px; 
-    transition: 2s;
 }
 
 .menu-title-container {
@@ -143,6 +141,27 @@
     }
 }
 
+.menu-price-container {
+    padding-bottom: 8px;
+    padding-right: 45px;
+    margin: 0;
+    font-family: $texte-font;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    color: white;
+    width: 50px;
+    margin-right: -80px; 
+    transition: 2s;
+}
+
+
 .menu-container:hover .check{
     margin-right: 0;
 }
@@ -151,32 +170,15 @@
     width: calc(100% - 70px);
 }
 
-.heart-container {
-    @include heart-container;
+.button-order {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
 
+    & button {
+        @include purple-button
+    }
 }
-
-.empty-heart {
-    opacity: 1;
-    position: absolute;
-    top: -13px;
-    right: -40px;
-    transition: 0s;
-    color: rgb(0, 0, 0);
-}
-
-
-.full-heart {
-    opacity: 0;
-    position: absolute;
-    top: -13px;
-    right: -40px;
-    transition: 2s;
-    background: linear-gradient($secondary-color,$primary-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 
 
 ////////////////// ANIMATION MENU //////////////////
@@ -185,18 +187,21 @@
     opacity: 0;
     animation: menuAnimation 3s ease forwards;
     animation-delay: 0.2s; /* Délai pour le groupe d'entrées */
+    padding-bottom: 5px;
 }
 
 .animationPlats {
     opacity: 0;
     animation: menuAnimation 3s ease forwards;
     animation-delay: 0.6s; /* Délai pour le groupe de plats */
+    padding-bottom: 5px;
 }
 
 .animationDesserts {
     opacity: 0;
     animation: menuAnimation 3s ease forwards;
     animation-delay: 1s; /* Délai pour le groupe de desserts */
+    padding-bottom: 5px;
 }
 
 @keyframes menuAnimation {
