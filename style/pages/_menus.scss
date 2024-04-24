@@ -57,7 +57,7 @@
     position: absolute;
     top: -13px;
     right: -40px;
-    transition: 0s;
+    transition: 4s;
     color: rgb(0, 0, 0);
 }
 
@@ -67,7 +67,7 @@
     position: absolute;
     top: -13px;
     right: -40px;
-    transition: 2s;
+    transition: 4s;
     background: linear-gradient($secondary-color,$primary-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

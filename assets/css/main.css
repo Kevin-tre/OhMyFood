@@ -401,11 +401,9 @@ input::placeholder {
 }
 .card-heart:hover .empty-heart {
   opacity: 0;
-  transition: 2s;
 }
 .card-heart:hover .full-heart {
   opacity: 1;
-  transition: 2s;
 }
 
 .img-container img {
@@ -465,11 +463,9 @@ input::placeholder {
 }
 .heart-container:hover .empty-heart {
   opacity: 0;
-  transition: 2s;
 }
 .heart-container:hover .full-heart {
   opacity: 1;
-  transition: 2s;
 }
 
 .empty-heart {
@@ -477,7 +473,7 @@ input::placeholder {
   position: absolute;
   top: -13px;
   right: -40px;
-  transition: 0s;
+  transition: 4s;
   color: rgb(0, 0, 0);
 }
 
@@ -486,7 +482,7 @@ input::placeholder {
   position: absolute;
   top: -13px;
   right: -40px;
-  transition: 2s;
+  transition: 4s;
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -660,7 +656,7 @@ input::placeholder {
   align-items: center;
   min-height: 100vh;
   background: rgba(5, 39, 39, 0.9);
-  animation: endAnimation 0s ease-in 3s forwards;
+  animation: endAnimation 3s forwards;
 }
 
 @keyframes endAnimation {
