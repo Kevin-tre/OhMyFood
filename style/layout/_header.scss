@@ -5,11 +5,15 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-   
+}
+
+.test {
+ margin: 14px auto;
+ height: 30px;
 }
 .Logo{
     height: 36px;
-    margin: 14px ;
+    margin: 14px auto ;
 }
 
 .search-bar{
@@ -55,22 +59,28 @@ input::placeholder{
 
 // HEADER MENU //
 
+.menu-header{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 65px;
+   
+}
 .menu-nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+
+    & a {
+        display: flex;
+        align-items: center;
+    }
 
     & i {
         font-size: 30px;
         height: 16px;
         align-content: center;
-        position: absolute;
-        right: 54px;
-    }
-
-    & a {
-        display: flex;
-        align-items: center;
+        padding-left: 20px;
     }
 }
